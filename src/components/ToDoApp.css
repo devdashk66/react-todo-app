@@ -1,0 +1,237 @@
+.todoWrapper {
+  background: rgb(231, 231, 231);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todoInner {
+  background: #9499ff;
+  max-width: 40rem;
+  width: 90vw;
+  height: 90vh;
+  border-radius: 2rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 1rem 3rem -5px #000000;
+  position: relative;
+}
+
+.profile {
+  background: #f3f4f5;
+  box-shadow: 0rem 0.6rem 0.5rem -5px #000000;
+  padding-bottom: 9rem;
+  text-align: center;
+  padding-top: 2rem;
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 1rem 0;
+}
+.input input {
+  padding: 1.5rem;
+  width: 30rem;
+  border-radius: 5rem;
+  border: none;
+  outline: none;
+  font-size: 1.6rem;
+  background: transparent;
+  box-shadow: 0rem 0rem 1.8rem -0.3rem #9499ff;
+}
+
+.input button:hover {
+  color: #fff;
+  background-color: #9499ff;
+}
+
+.listItem li {
+  list-style: none;
+  font-size: 2rem;
+  color: #fff;
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  cursor: default;
+  margin-bottom: 2rem;
+  box-shadow: 0.2rem 0.2rem 0.8rem -0.3rem rgb(0 0 0 / 72%);
+  padding: 1rem;
+  border-radius: 7rem;
+}
+
+.listItem svg {
+  cursor: pointer;
+  font-size: 3rem;
+  transition: 0.3s;
+}
+
+.listItem {
+  flex: 1 1;
+  display: flex;
+  overflow: auto;
+  flex-direction: column;
+  height: 42.8rem;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.listItem span {
+  word-wrap: break-word;
+  width: 30rem;
+  margin-left: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.profile h2 {
+  font-size: 4.5rem;
+  color: #9499ff;
+  font-family: sans-serif;
+  font-weight: 700;
+  text-shadow: 0.2rem 0.2rem 0.6rem #898989;
+}
+.profile span {
+  color: #313131;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+/* ///////////////////////     User Name Popup     ///////////////// */
+/* ///////////////////////////////////////////////////////////////// */
+
+.userName {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #0a1929;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 1.5s;
+  top: 0;
+  left: 0;
+}
+
+.userName input {
+  width: 26rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  font-size: 1.8rem;
+  outline: none;
+  color: #fff;
+  margin-bottom: 2rem;
+  background: transparent;
+  border-bottom: 2px solid #9499ff;
+  text-align: center;
+}
+.userName button {
+  width: 20rem;
+  border: none;
+  padding: 1rem 0;
+  font-size: 2rem;
+  border-radius: 3rem;
+  background: transparent;
+  cursor: pointer;
+  color: #b6b9ff;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0.2rem 0.2rem 1.8rem -0.3rem rgba(84, 84, 84, 0.72);
+}
+.input button {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  outline: none;
+  border-radius: 50rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  cursor: pointer;
+  color: #9499ff;
+  transition: 0.3s;
+  box-shadow: 0rem 0rem 1.8rem -0.3rem #9499ff;
+  font-size: 3.5rem;
+}
+/* ///////////////////////////////////////////////////////////////// */
+/* ///////////////////////     User Name Popup     ///////////////// */
+/* ///////////////////////////////////////////////////////////////// */
+
+@media (max-width: 468px) {
+  .todoInner {
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0rem;
+    overflow: hidden;
+    box-shadow: 0.5rem 1rem 3rem -5px #000000;
+  }
+  .listItem {
+    height: 85vh;
+  }
+  .input input {
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 5rem;
+    border: none;
+    outline: none;
+    font-size: 2.2rem;
+  }
+
+  .input button {
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    outline: none;
+    border-radius: 50rem;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: #9499ff;
+    transition: 0.3s;
+  }
+  .listItem svg {
+    cursor: pointer;
+    font-size: 3.5rem;
+    transition: 0.3s;
+    color: #f5a3a3;
+  }
+
+  .listItem svg:hover {
+    color: #f5a3a3;
+  }
+
+  .listItem svg:nth-child(2) {
+    cursor: pointer;
+    font-size: 2.9rem;
+    color: #b1f5a3;
+  }
+  .listItem svg:nth-child(2):hover {
+    color: #b1f5a3;
+  }
+  .input {
+    top: 12rem;
+  }
+  .profile {
+    padding-bottom: 10rem;
+  }
+}
